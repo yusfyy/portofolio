@@ -1,0 +1,3046 @@
+                             /*UTAMA*/
+*,head,body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+    /* scroll-snap-type: y mandatory; */
+    user-select: none;
+}
+section {
+    /* scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth; */
+}
+/*scroll page*/
+body {
+    scroll-snap-type: y mandatory;
+    -webkit-font-smooting: antialiased;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+}
+.yusfyypage,
+.wisnupage,
+.restipage, {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+} 
+                             /*FONT*/
+/*jetbrains*/
+@font-face {
+    font-family: jetbrains ;
+    src: url(webfonts/jetbrains/JetBrainsMono-Regular.ttf);    
+}
+/*akira*/
+@font-face {
+    font-family: akira;
+    src: url(webfonts/akira/Akira\ Expanded\ Demo.otf);
+}
+/*coolvetica*/
+@font-face {
+    font-family: coolvetica-regular;
+    src: url(webfonts/coolvetica/coolvetica\ rg.otf);
+}
+@font-face {
+    font-family: coolvetica-italy;
+    src: url(webfonts/coolvetica/coolvetica\ rg\ it.otf);
+}
+@font-face {
+    font-family: coolvetica-light;
+    src: url(webfonts/coolvetica/coolvetica\ condensed\ rg.otf);
+}
+/*nexa*/
+@font-face {
+    font-family: nexa-regular;
+    src: url(webfonts/nexa/Nexa-Heavy.ttf);
+}
+@font-face {
+    font-family: nexa-light;
+    src: url(webfonts/nexa/Nexa-ExtraLight.ttf);
+}
+/*poppins*/
+@font-face {
+    font-family: poppins-regular;
+    src: url(webfonts/poppins/poppins.regular.ttf);
+}
+@font-face {
+    font-family: poppins-medium;
+    src: url(webfonts/poppins/poppins.medium.ttf);
+}
+                             /*ANIMASI*/
+@keyframes deskripsihome {
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }
+    to {
+        opacity: 100;
+        transform: translateX(0);
+    }
+}
+@keyframes btnlihat {
+    from {
+        scale: 0;
+    }
+    to {
+        scale: 1;
+    }
+}
+@keyframes animasibuled1 {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+@keyframes animasishuriken {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 1800deg;
+    }
+}
+@keyframes star {
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+@keyframes animport {
+    from {
+        transform: translateX(2rem);
+    }
+    to {
+        transform: translateX(0rem);
+    }
+}
+@keyframes animasipattern {
+    0% {transform: translateY(-1rem);}
+    50% {transform: translateY(1rem);}
+    100% {transform: translateY(-1rem);}
+}
+                             /*HOME*/
+.utama {
+    min-height: 100vh;
+    background-image: url(img/bg_utama_nostar.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-snap-type: y center;
+    position: relative;
+    overflow: hidden;
+}
+/*NAVIGASI*/
+.navigasi {
+    display: flex;
+    /* margin: 0rem 0 0 35% ; */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 4rem;
+    width: 100vw;
+    /* background-color: transparent; */
+    backdrop-filter: blur(1px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 9999;
+}
+.navigasi ul {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+}
+.navigasi ul li {
+    display: flex;
+    margin: 0rem 3rem;
+    justify-content: center;
+    position: relative;
+}
+.navigasi ul li a {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: poppins-medium;
+    font-weight: 3000rem;
+    color: #F8F8F8;
+    text-decoration: none;
+}
+/*stars*/
+/*starkiri*/
+.parentstar {
+    display: flex;
+    height: 22rem;
+    width: 98.9vw;
+    opacity: 100%;
+    background-color: transparent;
+}
+.star1 {
+    animation: star 5s infinite linear;
+    animation-delay: 1s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star2 {
+    animation: star 5s infinite linear;
+    animation-delay: ;
+
+    display: flex;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 10rem;
+    left: 9rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star3 {
+    animation: star 5s infinite linear;
+    animation-delay: 2s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 7rem;
+    left: 18rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star4 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.5s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 8rem;
+    left: 29rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star5 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.3s;
+
+    display: flex;
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    top: 4rem;
+    left: 35rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+/*starkanan*/
+.star6 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.1s;
+
+    display: flex;
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star7 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.7s;
+
+    display: flex;
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star7 {
+    animation: star 5s infinite linear;
+    animation-delay: 0.5s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 13rem;
+    right: 10rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star8 {
+    animation: star 5s infinite linear;
+    animation-delay: 0.8s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 4rem;
+    right: 16rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star9 {
+    animation: star 5s infinite linear;
+    animation-delay: ;
+
+    display: flex;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 13rem;
+    right: 25rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.star10 {
+    animation: star 5s infinite linear;
+    animation-delay: 2.3;
+
+    display: flex;
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    top: 6rem;
+    right: 34rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+/*HOME*/
+.home {
+    display: flex;
+}
+.reviewutama {
+    position: absolute;
+    /* top: 34rem; */
+    bottom: 2rem;
+    left: 3.5rem;
+}
+.welcome {
+    display: flex;
+    text-align: center;
+    position: relative;
+    top: rem;
+    right: ;
+    bottom: ;
+    left: rem;
+    font-family: poppins-medium;
+    color: #F8F8F8;
+
+    animation: deskripsihome 2s ease-out;
+}
+.deskripsiutama {
+    display: flex;
+    text-align: start;
+    margin: rem rem 0 0;
+    width: 18rem;
+    position: relative;
+    top: em;
+    right: rem;
+    bottom: rem;
+    left: rem;
+    font-family: poppins-regular;
+    color: #F8F8F8;
+
+    animation: deskripsihome 3s ease-out;
+}
+.divlihat {
+    position: absolute;
+    /* top: 40rem; */
+    bottom: 4.5rem;
+    right: 2rem;
+    /* left: 76rem; */
+    animation: deskripsihome 2s ease-out;
+}
+.btnlihat {
+    text-decoration: none;
+}
+.lihat {
+    display: flex;
+    font-family: poppins-medium;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
+    
+    margin: 0 0 0 0;
+    height: 3em;
+    width: 6em;
+    
+    color: #F8F8F8;
+    background-color: #29293f;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: #F8F8F8;
+}
+/*hover utama*/
+.navigasi ul li a:hover {
+    transition: 1s;
+    filter: drop-shadow(1px 1px 10px #F8F8F8);
+}
+.navigasi ul li a::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    top: 90%;
+    left: 0px;
+    background: #F8F8F8;
+    transition: 1s;
+}
+.navigasi ul li a:hover::before {
+    transition: 1s;
+    width: 100%;
+}
+.welcome::before {
+    content: "";
+    display: flex;
+    background-color: #F8F8F8;
+    height: 0.1em;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 1px;
+}
+.welcome:hover::before {
+    width: 40%;
+    transition: 1s;
+}
+.lihat:hover {
+    transition: 1s;
+    animation: ease;
+    animation-direction: alternate;
+    background-color: #F8F8F8;
+    color: #29293f;
+    scale: 1.1;
+}
+                             /*PORTOFOLIO*/
+.portofolio {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image: url(img/bg_portofolio.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+/*head*/
+.porthead {
+    display: flex;
+    font-family: poppins-medium;
+    font-size: 3rem;
+    position: absolute;
+    top: 20vh;
+    color: #F8F8F8;
+}
+/*stars*/
+.starport {
+    display: flex;
+    height: 22rem;
+    width: 98.9vw;
+    opacity: 100%;
+    background-color: transparent;
+}
+.starp1 {
+    animation: star 5s infinite linear;
+    animation-delay: 1s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 4rem;
+    left: 3rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.starp2 {
+    animation: star 5s infinite linear;
+    animation-delay: ;
+
+    display: flex;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 9rem;
+    left: 9rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.starp3 {
+    animation: star 5s infinite linear;
+    animation-delay: 2s;
+
+    display: flex;
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    top: 7rem;
+    left: 25rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.starp4 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.5s;
+
+    display: flex;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 8rem;
+    left: 35rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+.starp5 {
+    animation: star 5s infinite linear;
+    animation-delay: 1.3s;
+
+    display: flex;
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    top: 4rem;
+    left: 50rem;
+
+    background-color: white;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 5px white);
+}
+/*tombol*/
+.kolombtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+    position: absolute;
+    bottom: 25vh;
+    /* background-color: rgba(128, 128, 128, 0); */
+}
+/*baris1*/
+.baris1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 75%;
+    position: absolute;
+    top: 35vh;
+    background-color: transparent;
+}
+.btnyusfyy {
+    text-decoration: none;
+    margin: 0px rem;
+}
+.btnyusfyy .yus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+
+    font-family: poppins-medium;
+    color: #F8F8F8;
+    background: rgba( 25, 13, 75, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: #F8F8F8;
+    text-decoration: none;
+}
+/*baris2*/
+.baris2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 75%;
+    margin-top: 7rem;
+    position: absolute;
+    top: 35vh;
+    background-color: transparent;
+}
+.btnyusfyy {
+    text-decoration: none;
+    margin: 0px 1rem;
+}
+.btnyusfyy .yus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+
+    font-family: poppins-medium;
+    color: #F8F8F8;
+    background: rgba( 25, 13, 75, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-color: #F8F8F8;
+    text-decoration: none;
+}
+
+/*hover portofolio*/
+.btnyusfyy button:hover {
+    transition: 1s;
+    animation: ease;
+    animation-direction: alternate;
+    background-color: #F8F8F8;
+    color: #29293f;
+    scale: 1.1;
+}
+                             /*YUSFYY*/
+.yusfyypage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    /* background: rgb(99,86,199);
+    background: linear-gradient(140deg, rgba(99,86,199,1) 0%, rgba(95,80,211,1) 33%, rgba(99,86,199,1) 64%, rgba(95,80,211,1) 100%); */
+    background: rgb(44,37,103);
+    background: linear-gradient(90deg, rgba(44,37,103,1) 0%, rgba(95,80,211,1) 100%);
+    overflow: hidden;
+}
+/*isi yusfyy*/
+.yuspengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 10rem;
+    z-index: 1;
+}
+.yusfyyhead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -1rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.shuriken {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    background-clip: #F8F8F8;
+    -webkit-background-clip: #F8F8F8;
+    color: transparent;
+    animation: animasishuriken ease-in-out 5s infinite;
+}
+.yusdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 21rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.yussocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #5F50D3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #5F50D3;
+}
+.yussocial a {
+}
+.yussocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.pattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.shapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    /* background: rgb(95,80,211);
+    background: linear-gradient(90deg, rgba(95,80,211,1) 0%, rgba(157,149,218,1) 100%); */
+    background: rgb(255,113,205);
+    background: linear-gradient(90deg, rgba(255,113,205,1) 0%, rgba(255,199,235,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #FF71CD);
+}
+.shapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #2B2C52;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #5F50D3;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.shapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #303466;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.shapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #363C76;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.yusfyyframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #5f50d346;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.yusfyyimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #131313b4;
+}
+.yusfyy2img {
+    display: flex;
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px #131313b4;
+    z-index: 1;
+    opacity: 0%;
+}
+/*yusfyy hover*/
+.yuspengenalan::before {
+    content: "";
+    height: 100px;
+    background: rgb(140,130,217);
+    background: linear-gradient(140deg, rgba(140,130,217,1) 0%, rgba(95,80,211,1) 33%, rgba(140,130,217,1) 64%, rgba(95,80,211,1) 100%);
+}
+.yussocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.yusfyyframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+.yusfyy2img:hover {
+    opacity: 100%;
+    transition: 0.3s;
+}
+                             /*WISNU*/
+.wisnupage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(23,21,32);
+    background: linear-gradient(90deg, rgba(23,21,32,1) 0%, rgba(77,73,91,1) 100%);
+    overflow: hidden;
+}
+/*isi wisnu*/
+.wispengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 10rem;
+    z-index: 1;
+}
+.wisnuhead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -1rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.wisdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 21rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.wissocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #4D495B;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    -webkit-backdrop-filter: blur(10px) saturate(100%);
+    /* background-color: rgba(95, 80, 211, 0.2); */
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #4D495B;
+}
+.wissocial a {
+}
+.wissocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.wispattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.wisshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    /* background: rgb(95,80,211);
+    background: linear-gradient(90deg, rgba(95,80,211,1) 0%, rgba(157,149,218,1) 100%); */
+    background: rgb(162,157,176);
+    background: linear-gradient(90deg, rgba(162,157,176,1) 0%, rgba(77,73,91,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #4D495B);
+}
+.wisshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #2b2b2b;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #242424;
+}
+.wisshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #353535;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.wisshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #525252;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.wisnuframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    background-color: #4d495b38;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.wisnuimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*wisnu hover*/
+.wispengenalan::before {
+    content: "";
+    height: 100px;
+    background: rgb(140,130,217);
+    background: linear-gradient(140deg, rgba(140,130,217,1) 0%, rgba(95,80,211,1) 33%, rgba(140,130,217,1) 64%, rgba(95,80,211,1) 100%);
+}
+.wissocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.wisnuframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*RESTI*/
+.restipage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(101,12,12);
+    background: linear-gradient(90deg, rgba(101,12,12,1) 0%, rgba(179,0,0,1) 100%);
+    overflow: hidden;
+}
+/*isi resti*/
+.respengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 10rem;
+    z-index: 1;
+}
+.restihead {
+    display: fleSx;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.resdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 21rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.ressocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #B30000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #B30000;
+}
+.ressocial a {
+}
+.ressocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.respattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.resshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(19,19,19,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #131313);
+}
+.resshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #630303;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #B30000;
+}
+.resshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #880303;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.resshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #920b0b;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.restiframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #b3000036;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.restiimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.ressocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.restiframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*RESTI*/
+.restipage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(101,12,12);
+    background: linear-gradient(90deg, rgba(101,12,12,1) 0%, rgba(179,0,0,1) 100%);
+    overflow: hidden;
+}
+/*isi resti*/
+.respengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 10rem;
+    z-index: 1;
+}
+.restihead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.resdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 21rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.ressocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #B30000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #B30000;
+}
+.ressocial a {
+}
+.ressocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.respattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.resshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(19,19,19,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #131313);
+}
+.resshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #630303;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #B30000;
+}
+.resshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #880303;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.resshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #920b0b;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.restiframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #b3000036;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.restiimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.ressocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.restiframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*RESTI*/
+.restipage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(101,12,12);
+    background: linear-gradient(90deg, rgba(101,12,12,1) 0%, rgba(179,0,0,1) 100%);
+    overflow: hidden;
+}
+/*isi resti*/
+.respengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 10rem;
+    z-index: 1;
+}
+.restihead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.resdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 21rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.ressocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #B30000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #B30000;
+}
+.ressocial a {
+}
+.ressocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.respattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.resshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(19,19,19,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #131313);
+}
+.resshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #630303;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #B30000;
+}
+.resshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #880303;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.resshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #920b0b;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.restiframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #b3000036;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.restiimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.ressocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.restiframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*DINDA*/
+.dindapage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(11,69,88);
+    background: linear-gradient(90deg, rgba(11,69,88,1) 0%, rgba(0,150,199,1) 100%);
+    overflow: hidden;
+}
+/*isi resti*/
+.dinpengenalan {
+    display: flex;
+    position: absolute;
+    top: 38vh;
+    right: rem;
+    bottom: rem;
+    left: 6rem;
+    z-index: 1;
+}
+.dindahead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.dindeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 40rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.dinsocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #0096C7;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #0096C7;
+}
+.dinsocial a {
+}
+.dinsocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.dinpattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.dinshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(75,107,150);
+    background: linear-gradient(90deg, rgba(75,107,150,1) 0%, rgba(0,33,77,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #00214d);
+}
+.dinshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #095169;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #0096C7;
+}
+.dinshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #087599;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.dinshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #0785af;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.dindaframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #0095c73f;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.dindaimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.dinsocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.dindaframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*masha*/
+.mashapage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(74,52,39);
+    background: linear-gradient(90deg, rgba(74,52,39,1) 0%, rgba(150,122,106,1) 100%);
+    overflow: hidden;
+}
+/*isi masha*/
+.maspengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.mashahead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.masdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 40rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.massocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #967A6A;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #967A6A;
+}
+.massocial a {
+}
+.massocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.maspattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.masshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(221,189,161);
+    background: linear-gradient(90deg, rgba(221,189,161,1) 0%, rgba(93,67,44,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #5D432C);
+}
+.masshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #795f50;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #967A6A;
+}
+.masshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #856d5f;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.masshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #af9180;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.mashaframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #967a6a44;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.mashaimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.massocial a button svg:hover {
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.mashaframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*TEGAR*/
+.tegarpage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(61,60,60,1) 100%);
+    overflow: hidden;
+}
+/*isi tegar*/
+.tegpengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.tegarhead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -1rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.tegdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 34rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.tegsocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #967A6A;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #242424;
+}
+.tegsocial a {
+}
+.tegsocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.tegpattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.tegshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(79,74,74);
+    background: linear-gradient(90deg, rgba(79,74,74,1) 0%, rgba(248,248,248,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 10px #F8F8F8);
+}
+.tegshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #2b2b2b;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #242424;
+}
+.tegshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #353535;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.tegshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #525252;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.tegarframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #f8f8f821;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.tegarimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*resti hover*/
+.shisocial a button svg:hover {a
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.shilaframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*SHILA*/
+.shilapage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(135,49,71);
+    background: linear-gradient(90deg, rgba(135,49,71,1) 0%, rgba(255,143,171,1) 100%);
+    overflow: hidden;
+}
+/*isi tegar*/
+.shipengenalan {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.shilahead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.shideskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 40rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.shisocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #FF8FAB;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 10px #FF8FAB;
+}
+.shisocial a {
+}
+.shisocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.shipattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.shishapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(196,237,233);
+    background: linear-gradient(90deg, rgba(196,237,233,1) 0%, rgba(64,224,208,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #40e0d0);
+}
+.shishapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #c4617a;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #FF8FAB;
+}
+.shishapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #d1738b;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.shishapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #e07791;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.shilaframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #f8f8f821;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.shilaimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*shila hover*/
+.shisocial a button svg:hover {a
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.shilaframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*AGUS*/
+.aguspage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(74,2,2);
+    background: linear-gradient(90deg, rgba(74,2,2,1) 0%, rgba(138,7,7,1) 100%);
+    overflow: hidden;
+}
+/*isi agus*/
+.agupengenalan {
+    display: flex;
+    position: absolute;
+    top: 42vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.agushead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.agudeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 40rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.agusocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #8A0707;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 15px #8A0707;
+}
+.agusocial a {
+}
+.agusocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.agupattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.agushapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(89,89,89);
+    background: linear-gradient(90deg, rgba(89,89,89,1) 0%, rgba(19,19,19,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #131313);
+}
+.agushapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #630303;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #B30000;
+}
+.agushapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #880303;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.agushapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #920b0b;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.agusframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #8a07073d;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.agusimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*agus hover*/
+.agusocial a button svg:hover {a
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.agusframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*SIREN*/
+.sirenpage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(27,111,80);
+    background: linear-gradient(90deg, rgba(27,111,80,1) 0%, rgba(62,180,137,1) 100%);
+    overflow: hidden;
+}
+/*isi agus*/
+.sirpengenalan {
+    display: flex;
+    position: absolute;
+    top: 38vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.sirenhead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.sirdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: rem;
+    width: 38rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.sirsocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #3eb489;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 15px #3eb489;
+}
+.sirsocial a {
+}
+.sirsocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.sirpattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.sirshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(64,147,116);
+    background: linear-gradient(90deg, rgba(64,147,116,1) 0%, rgba(30,87,66,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #1e5742);
+}
+.sirshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #1e5742;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #3eb489;
+}
+.sirshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #369472;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.sirshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #44b88d;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.sirenframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #3eb4892d;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.sirenimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*siren hover*/
+.sirensocial a button svg:hover {a
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.sirenframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*YASIN*/
+.yasinpage {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background: rgb(103,134,130);
+    background: linear-gradient(90deg, rgba(103,134,130,1) 0%, rgba(195,251,244,1) 100%);
+    overflow: hidden;
+}
+/*isi yasin*/
+.yaspengenalan {
+    display: flex;
+    position: absolute;
+    top: 45vh;
+    right: rem;
+    bottom: rem;
+    left: 8rem;
+    z-index: 1;
+}
+.yashead {
+    display: flex;
+    position: absolute;
+    margin-right: rem;
+    top: rem;
+    right: ;
+    bottom: rem;
+    left: -0rem;
+    font-size: 3rem;
+    
+    font-family: akira;
+    color: #F8F8F8;
+}
+.yasdeskripsi {
+    display: flex;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    width: 25rem;
+    position: absolute;
+    
+    font-family: poppins-regular;
+    text-align: start;
+    color: #F8F8F8;
+    z-index: -1;
+}
+.yassocial {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    z-index: 1;
+
+    border: solid 1px #C3FBF4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(5px) saturate(100%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    box-shadow: 1px 1px 15px #C3FBF4;
+}
+.yassocial a {
+}
+.yassocial a button {
+    display: flex;
+    color: #F8F8F8;
+    scale: 2;
+    background-color: transparent;
+    border: none;
+}
+.yaspattern {
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    position: absolute;
+    opacity: 20%;
+    animation: animasipattern ease-in-out 10s infinite;
+    scale: 1.3;
+}
+.yasshapebuled1 {
+    display: flex;
+    height: 16em;
+    width: 16em;
+    /* height: 250px;
+    width: 250px; */
+    position: relative;
+    top: 37vh;
+    right: rem;
+    bottom: em;
+    left: 3rem;
+    animation: animasibuled1 linear 20s infinite;
+
+    background: rgb(204,233,230);
+    background: linear-gradient(90deg, rgba(204,233,230,1) 0%, rgba(146,187,182,1) 100%);
+    border-radius: 40%;
+    filter: drop-shadow(1px 1px 15px #C3FBF4);
+}
+.yasshapekanan1 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -60em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #92bbb6;
+    border-top-left-radius: 700px;
+    box-shadow: inset 3px 3px 30px #C3FBF4;
+}
+.yasshapekanan2 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -65em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #a2cfca;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.yasshapekanan3 {
+    display: flex;
+    height: 2000px;
+    width: 500px;
+    padding-right: 25rem;
+    position: absolute;
+    right: -70em;
+    top: -14rem;
+    rotate: -45deg;
+
+    background-color: #b6e9e3;
+    border-top-left-radius: 700px;
+    /* box-shadow: 1px 1px 20px #F8F8F8; */
+}
+.yasinframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 24rem;
+    position: absolute;
+    top: 18vh;
+    right: 5vw;
+
+    border-radius: 25px;
+    /* border: #131313 solid 1px; */
+    background-color: #c3fbf431;
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 10px #131313a6;
+}
+.yasinimg {
+    position: absolute;
+    height: 26rem;
+    width: 20rem;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px #131313b4;
+}
+/*siren hover*/
+.yasinsocial a button svg:hover {a
+    transition: 1s;
+    /* filter: drop-shadow(1px 1px 5px #F8F8F8); */
+    scale: 1.1;
+}
+.yasinframe img::after:hover {
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    background-color: #131313;
+}
+                             /*TEAM*/
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(img/bg_pink.jpg);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/*isi*/
+.teambox {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    bottom: 7vh;
+
+    /* border: solid 0.5px #F8F8F8; */
+    box-shadow: 0px 0px 5px #f8f8f8;
+    border-radius: 20px;
+    background: rgba( 231, 127, 183, 0.2 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.teamhead {
+    display: flex;
+    position: absolute;
+    top: 7vh;
+
+    font-size: 2.5em;
+    font-family: akira;
+    color: #f8f8f8;
+    /* opacity: 0; */
+}
+/*listkiri*/
+.listkiri {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 40vw;
+    position: absolute;
+    bottom: 20%;
+    /* background-color: #f8f8f84d; */
+    color: #f8f8f8;
+}
+.pengembang {
+    display: block;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-family: poppins-medium;
+    font-size: 1.4em;
+}
+.isipengembang {
+    font-family: poppins-regular;
+    font-size: 1em;
+}
+.manajemen {
+    display: block;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    font-family: poppins-medium;
+    font-size: 1.4em;
+}
+.isimanajemen {
+    font-family: poppins-regular;
+    font-size: 1em;
+}
+.desain {
+    display: block;
+    position: absolute;
+    /* top: 25vh; */
+    bottom: 0;
+    left: 3vw;
+    text-align: center;
+    font-family: poppins-medium;
+    font-size: 1.4em;
+}
+.isidesain {
+    font-family: poppins-regular;
+    font-size: 1em;
+}
+.dukungan {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0.5vw;
+    text-align: center;
+    font-family: poppins-medium;
+    font-size: 1.4em;
+}
+.isidukungan {
+    font-family: poppins-regular;
+    font-size: 1em;
+}
+/*shadow*/
+.teamhead {
+    filter: drop-shadow(0px 0px 10px #f8f8f8);
+}
+.pengembang,.isipengembang,.manajemen,.isimanajemen,.desain,.isidesain,.dukungan,.isidukungan
+{
+    filter: drop-shadow(0px 0px 5px #f8f8f841);
+}
+                             /*CONTACT*/
+.popcontact {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #1313133f;
+    z-index: 10;
+}
+.popup {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    width: 50%;
+    z-index: 11;
+
+    border: solid 1px #f8f8f8;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: transparent;
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    box-shadow: 0px 0px 10px #f8f8f83b;
+}
+.pophead {
+    display: flex;
+    position: absolute;
+    top: 4vh;
+
+    color: #f8f8f8;
+    font-family: poppins-medium;
+    font-size: 2em;
+}
+.x {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    scale: 2.5;
+    color: #f8f8f8;
+}
+.masukan {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40vh;
+    width: 30vw;
+    position: absolute;
+    top: 30%;
+
+    font-family: poppins-regular;
+    text-wrap: wrap;
+    color: #f8f8f8;
+    background-color: transparent;
+    /* border-radius: 10px; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+    border: 0;
+    border-left: solid 1px #f8f8f8;
+    border-right: solid 1px #f8f8f8;
+    border-bottom: solid 1px #f8f8f8;
+}
+.notif {
+    display: flex;
+    margin-right: 1%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-family: poppins-regular;
+    font-size: small;
+    color: #f8f8f8;
+}

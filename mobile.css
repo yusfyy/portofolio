@@ -1,0 +1,634 @@
+@media (max-width:900px) {
+                             /*HOME*/
+    .utama {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+    .navigasi {
+        right: -2vw;
+    }
+    .navigasi ul li {
+        margin: 0 2rem;
+    }
+    .navigasi ul li a {
+        font-size: small;
+    }
+    .home {
+        display: flex;
+        justify-content: center;
+    }
+    .reviewutama {
+        display: block;
+        justify-content: center;
+        /* background-color: grey; */
+        position: absolute;
+        left: 4%;
+        bottom: 16vh;
+    }
+    .welcome {
+        font-size: medium;
+        justify-content: center;
+    }
+    .deskripsiutama {
+        font-size: small;
+        width: 20rem;
+        text-align: center;
+    }
+    .divlihat {
+        position: absolute;
+        bottom: 8vh;
+        left: 42.5%;
+    }
+    .lihat {
+        height: 3em;
+        width: 5em;
+        font-size: smaller;
+        border-radius: 10px;
+    }
+    /*hover*/
+    .welcome:hover:before {
+        width: 25%;
+    }
+                             /*PORTOFOLIO*/
+    .portofolio {
+        min-height: 200vh;
+        min-width: 100%;
+    }
+    .kolombtn {
+        display: flex;
+        position: absolute;
+        bottom: 85vh;
+    }
+    .btnyusfyy {
+        margin-top: 1rem;
+    }
+                             /*YUSFYY*/
+    .yusfyypage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .yuspengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 70vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .yusfyyhead {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .yusdeskripsi {
+        display: flex;
+        width: 55vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .shuriken {
+        display: flex;
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    .shapebuled1,.shapekanan1,.shapekanan2,.shapekanan3 {display: none;}
+    .yusfyyframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 15vh;
+        left: 11vw;
+    }
+    .yusfyyimg,.yusfyy2img {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .yussocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .yussocial a button {
+        scale: 1.2;
+    }
+                             /*WISNU*/
+    .wisnupage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .wispengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 70vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .wisnuhead {
+        display: flex;
+        position: absolute;
+        left: 27vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .wisdeskripsi {
+        display: flex;
+        width: 55vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .wisshapebuled1,.wisshapekanan1,.wisshapekanan2,.wisshapekanan3 {display: none;}
+    .wisnuframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 15vh;
+        left: 11vw;
+    }
+    .wisnuimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .wissocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .wissocial a button {
+        scale: 1.2;
+    }
+                             /*RESTI*/
+    .restipage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .respengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 67vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .restihead {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .resdeskripsi {
+        display: flex;
+        width: 55vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .resshapebuled1,.resshapekanan1,.resshapekanan2,.resshapekanan3 {display: none;}
+    .restiframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 15vh;
+        left: 11vw;
+    }
+    .restiimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .ressocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .ressocial a button {
+        scale: 1.2;
+    }
+                             /*DINDA*/
+    .dindapage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .dinpengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 60vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .dindahead {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .dindeskripsi {
+        display: flex;
+        width: 85vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .dinshapebuled1,.dinshapekanan1,.dinshapekanan2,.dinshapekanan3 {display: none;}
+    .dindaframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 7vh;
+        left: 11vw;
+    }
+    .dindaimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .dinsocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .dinsocial a button {
+        scale: 1.2;
+    }
+                             /*MASHA*/
+    .mashapage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .maspengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 64vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .mashahead {
+        display: flex;
+        position: absolute;
+        left: 25vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .masdeskripsi {
+        display: flex;
+        width: 80vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .masshapebuled1,.masshapekanan1,.masshapekanan2,.masshapekanan3 {display: none;}
+    .mashaframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 12vh;
+        left: 11vw;
+    }
+    .mashaimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .massocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .massocial a button {
+        scale: 1.2;
+    }
+                             /*TEGAR*/
+    .tegarpage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .tegpengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 67vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .tegarhead {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .tegdeskripsi {
+        display: flex;
+        width: 70vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .tegshapebuled1,.tegshapekanan1,.tegshapekanan2,.tegshapekanan3 {display: none;}
+    .tegarframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 15vh;
+        left: 11vw;
+    }
+    .tegarimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .tegsocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .tegsocial a button {
+        scale: 1.2;
+    }
+                             /*SHILA*/
+    .shilapage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .shipengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 62vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .shilahead {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .shideskripsi {
+        display: flex;
+        width: 80vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .shishapebuled1,.shishapekanan1,.shishapekanan2,.shishapekanan3 {display: none;}
+    .shilaframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 10vh;
+        left: 11vw;
+    }
+    .shilaimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .shisocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .shisocial a button {
+        scale: 1.2;
+    }
+                             /*AGUS*/
+    .aguspage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .agupengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 62vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .agushead {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .agudeskripsi {
+        display: flex;
+        width: 90vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .agushapebuled1,.agushapekanan1,.agushapekanan2,.agushapekanan3 {display: none;}
+    .agusframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 10vh;
+        left: 11vw;
+    }
+    .agusimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .agusocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .agusocial a button {
+        scale: 1.2;
+    }
+                             /*SIRHEEN*/
+    .sirenpage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .sirpengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 62vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .sirenhead {
+        display: flex;
+        position: absolute;
+        left: 23vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .sirdeskripsi {
+        display: flex;
+        width: 85vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .sirshapebuled1,.sirshapekanan1,.sirshapekanan2,.sirshapekanan3 {display: none;}
+    .sirenframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 10vh;
+        left: 11vw;
+    }
+    .sirenimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .sirsocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .sirsocial a button {
+        scale: 1.2;
+    }
+                             /*YASIN*/
+    .yasinpage {
+        min-width: 100%;
+        min-height: 100vh;
+        position: relative;
+    }
+    .yaspengenalan {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 67vh;
+        left: 5%;
+        /* background-color: grey; */
+        height: 10rem;
+        width: 20rem;
+    }
+    .yashead {
+        display: flex;
+        position: absolute;
+        left: 32vw;
+        top: 2.5vh;
+        font-size: 1.5rem;
+    }
+    .yasdeskripsi {
+        display: flex;
+        width: 55vw;
+        position: absolute;
+        font-size: small;
+        text-align: center;
+    }
+    .yasshapebuled1,.yasshapekanan1,.yasshapekanan2,.yasshapekanan3 {display: none;}
+    .yasinframe {
+        height: 23em;
+        width: 18em;
+        position: absolute;
+        top: 15vh;
+        left: 11vw;
+    }
+    .yasinimg {
+        /* height: 45vh;
+        width: 64vw; */
+        height: 20em;
+        width: 15em;
+    }
+    .yassocial {
+        left: 27%;
+        height: 2.5rem;
+        width: 10rem;
+    }
+    .yassocial a button {
+        scale: 1.2;
+    }
+                             /*TEAM*/
+    .team {
+    min-width: 100%;
+    min-height: 100vh;
+    }
+    .listkiri {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: ;
+        position: absolute;
+        bottom: 15vh;
+        height: 50vh;
+        width: 40vw;
+        background-color: rgba(240, 248, 255, 0);
+    }
+    .pengembang,
+    .manajemen,
+    .desain,
+    .dukungan {
+        font-size: medium;
+        margin-top: em;
+    }
+    .pengembang {
+        position: absolute;
+        left: 15%;
+    }
+    .manajemen {
+        position: absolute;
+        top: 13vh;
+        left: 5%;
+    }
+    .desain {
+        position: absolute;
+        margin: 0;
+        top: 26vh;
+        left: 35%;
+    }
+    .dukungan {
+        position: absolute;
+        margin: 0;
+        top: 39vh;
+        left: 10%;
+    }
+}
